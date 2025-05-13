@@ -1,0 +1,125 @@
+.navbar {
+    height: 100px;
+    background-color: #66A9FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    p {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .botaoMenu {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 500;
+        color: #66A9FF;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        padding: 12px 24px;
+        transition: background-color 0.3s ease;
+
+    }
+
+    & button:hover {
+        color: #66a8ff8f;
+    }
+}
+
+ /* Container principal */
+ .solenergy-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center; /* Alterado para centralizar verticalmente */
+}
+
+/* Seção da calculadora */
+.calculadora-section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de gradiente solar */
+.calculadora-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #fdc830, #f37335);
+}
+
+/* Cabeçalho */
+.calculadora-header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Texto descritivo */
+.calculadora-descricao {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* Botões */
+.botoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.botao-primario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    background: linear-gradient(135deg, #fdc830, #f37335);
+    color: white;
+    box-shadow: 0 4px 15px rgba(243, 115, 53, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.botao-primario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(243, 115, 53, 0.4);
+}
+
+/* Seção da imagem */
+.imagem-section {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.imagem-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
