@@ -286,3 +286,130 @@ section {
     padding: 40px;
     background-color: #357bd655;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 991px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 22px;
+    }
+
+    .navbar .botaoMenu {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+    }
+
+    .solenergy-container {
+        padding: 10px;
+    }
+
+    .solenergy-container img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .calculadora-section {
+        padding: 20px;
+    }
+
+    .calculadora-header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .calculadora-descricao {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .botoes-container {
+        justify-content: center;
+    }
+
+    .section-porque h3,
+    .section-depoimentos h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .section-porque .col-sm,
+    .section-depoimentos blockquote {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    .section-porque .col-sm h4 {
+        font-size: 24px;
+    }
+
+    .section-porque .col-sm p {
+        font-size: 16px;
+    }
+
+    .section-depoimentos {
+        width: 95%;
+    }
+
+    .section-form {
+        padding: 20px;
+    }
+
+    .demonstracao-form {
+        padding: 20px;
+    }
+
+    .demonstracao-form h3 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 14px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .navbar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .calculadora-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-porque h3,
+    .section-depoimentos h3 {
+        font-size: 26px;
+    }
+
+    .section-porque .col-sm h4 {
+        font-size: 20px;
+    }
+
+    .section-porque .col-sm p {
+        font-size: 14px;
+    }
+
+    .section-depoimentos blockquote {
+        font-size: 14px;
+    }
+}
