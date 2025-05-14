@@ -1,133 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calculadora Solar Inteligente | SolEnergy Pro</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous">
-        <link href="/styles/styles.css" rel="stylesheet">
-        <script src="/utils/script_pages.js" defer></script>
-        <script src="/utils/script_form.js" defer></script>
-    </head>
-    <body>
-        <div id="header-container"></div>
-        <!-- Hero -->
-        <div class="solenergy-container">
-            <section class="calculadora-section">
-                <div class="calculadora-header">
-                    <h1>Calculadora Solar Inteligente</h1>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Solar Inteligente | SolEnergy Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <script src="/utils/script_pages.js" defer></script>
+    <script src="/utils/script_form.js" defer></script>
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <!-- Hero -->
+    <div class="solenergy-container">
+        <section class="calculadora-section">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="calculadora-header">
+                        <h1>Calculadora Solar Inteligente</h1>
+                    </div>
+                    <p class="calculadora-descricao">
+                        Transforme orçamentos demorados em segundos! Nosso sistema
+                        automatiza cálculos e gera propostas para seus clientes de
+                        energia solar.
+                    </p>
+                    <div class="botoes-container">
+                        <a href="#form" class="botao-primario">Solicitar
+                            Demonstração</a>
+                    </div>
                 </div>
-                <p class="calculadora-descricao">
-                    Transforme orçamentos demorados em segundos! Nosso sistema
-                    automatiza cálculos e gera propostas para seus clientes de
-                    energia solar.
-                </p>
-                <div class="botoes-container">
-                    <a href="#" class="botao-primario">Solicitar
-                        Demonstração</a>
+                <div class="col-sm">
+                    <img src="/assets/calculadora.png" alt="Calculadora">
                 </div>
-                <!-- Seção da Imagem -->
-                <section class="imagem-section">
-                    <img
-                        src="/assets/calculadora.png"
-                        alt="Painéis solares">
-                </section>
-            </section>
+            </div>
+        </section>
+    </div>
+
+    <!-- Benefícios -->
+    <section>
+        <div class="section-porque">
+            <h3>Por que usar a NoConsumoFacens?</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="https://img.icons8.com/color/96/solar-panel.png" />
+                    <h4>Cálculos Precisos</h4>
+                    <p>Baseado em consumo,
+                        localização, irradiação e tarifa da
+                        distribuidora.</p>
+                </div>
+                <div class="col-sm">
+                    <img src="https://img.icons8.com/color/96/lightning-bolt.png" />
+                    <h4>Agilidade no
+                        Orçamento</h4>
+                    <p>Gere propostas completas
+                        em menos de 1 minuto.</p>
+                </div>
+                <div class="col-sm">
+                    <img src="https://img.icons8.com/stickers/100/calculator--v1.png" />
+                    <h4>Cálculos
+                        Personalizados</h4>
+                    <p>Resultado com informações
+                        completas para o cliente.</p>
+                </div>
+            </div>
         </div>
-        <!-- Seção da Calculadora -->
+    </section>
 
-        <!-- Benefícios -->
-        <section class="py-16 bg-white">
-            <div class="max-w-6xl mx-auto px-6">
-                <h3 class="text-3xl font-bold text-center mb-12">Por que usar a
-                    NoConsumeFacens?</h3>
-                <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <div>
-                        <img
-                            src="https://img.icons8.com/color/96/solar-panel.png"
-                            class="mx-auto mb-4" />
-                        <h4 class="font-semibold text-xl">Cálculos Precisos</h4>
-                        <p class="mt-2 text-gray-600">Baseado em consumo,
-                            localização, irradiação e tarifa da
-                            distribuidora.</p>
-                    </div>
-                    <div>
-                        <img
-                            src="https://img.icons8.com/color/96/lightning-bolt.png"
-                            class="mx-auto mb-4" />
-                        <h4 class="font-semibold text-xl">Agilidade no
-                            Orçamento</h4>
-                        <p class="mt-2 text-gray-600">Gere propostas completas
-                            em menos de 1 minuto.</p>
-                    </div>
-                    <div>
-                        <img
-                            src="https://img.icons8.com/stickers/100/calculator--v1.png"
-                            class="mx-auto mb-4" />
-                        <h4 class="font-semibold text-xl">Cálculos
-                            Personalizados</h4>
-                        <p class="mt-2 text-gray-600">Resultado com informações
-                            completas para o cliente.</p>
-                    </div>
-                </div>
+    <!-- Depoimentos -->
+    <section>
+        <div class="section-depoimentos">
+            <h3>O que dizem nossos
+                clientes</h3>
+            <blockquote>
+                “Com a NoConsumoFacens conseguimos dobrar nossa
+                produtividade e impressionar os clientes com a rapidez nos
+                orçamentos.”
+                <footer>— João
+                    Mendes, CEO da Luz Solar</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="section-form">
+        <form class="demonstracao-form">
+            <h3>Solicite uma Demonstração
+                Gratuita</h3>
+            <div class="form-group">
+                <label for="exampleInputName1">Nome</label>
+                <input type="text" id="name" name="name" required />
             </div>
-        </section>
-
-        <!-- Depoimentos -->
-        <section class="bg-gray-100 py-16">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                <h3 class="text-3xl font-bold mb-10">O que dizem nossos
-                    clientes</h3>
-                <blockquote class="italic text-lg text-gray-700">
-                    “Com a NoConsumeFacens conseguimos dobrar nossa
-                    produtividade e impressionar os clientes com a rapidez nos
-                    orçamentos.”
-                    <footer class="mt-4 font-semibold text-gray-800">— João
-                        Mendes, CEO da Luz Solar</footer>
-                </blockquote>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" id="email" name="email" required />
             </div>
-        </section>
-
-        <!-- Formulário -->
-        <section id="form" class="py-16 bg-blue-100">
-            <div class="max-w-3xl mx-auto px-6 bg-white p-8 rounded shadow-md">
-                <h3 class="text-2xl font-bold mb-6">Solicite uma Demonstração
-                    Gratuita</h3>
-                <form class="space-y-4">
-                    <div>
-                        <label class="block font-medium">Nome</label>
-                        <input type="text" class="w-full border p-2 rounded"
-                            id="name" name="name" required />
-                    </div>
-                    <div>
-                        <label class="block font-medium">E-mail</label>
-                        <input type="email" class="w-full border p-2 rounded"
-                            id="email" name="email" required />
-                    </div>
-                    <div>
-                        <label class="block font-medium">Nome da Empresa</label>
-                        <input type="text" class="w-full border p-2 rounded"
-                            id="nameE" name="nameE" required />
-                    </div>
-                    <div>
-                        <label class="block font-medium">Mensagem
-                            (opcional)</label>
-                        <textarea class="w-full border p-2 rounded" rows="3"
-                            id="message" name="message"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Quero
-                        Testar</button>
-                </form>
+            <div class="form-group">
+                <label>Nome da Empresa</label>
+                <input type="text" id="nameE" name="nameE" required />
             </div>
-        </section>
+            <div class="form-group">
+                <label>Mensagem(opcional)</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Quero Testar</button>
+        </form>
+    </section>
 
-        <!-- Rodapé -->
+    <!-- Rodapé -->
 
-        <div id="footer-container"></div>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+    u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C
+    8" crossorigin="anonymous">
+    </script>
+    <div id="footer-container"></div>
+</body>
+
 </html>

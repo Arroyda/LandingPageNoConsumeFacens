@@ -1,3 +1,4 @@
+/* CSS Menu Topo */
 .navbar {
     height: 100px;
     background-color: #66A9FF;
@@ -8,118 +9,274 @@
     padding-left: 10%;
     padding-right: 10%;
 
-    p {
+    a {
+        color: black;
         font-weight: bold;
         font-size: 30px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
     }
 
     .botaoMenu {
-        background-color: white;
-        font-size: 16px;
-        font-weight: 500;
-        color: #66A9FF;
-        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        min-width: 50px;
+        max-height: 80px;
+        background: linear-gradient(135deg, #ffffff, #e3e2e2);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         border: none;
         cursor: pointer;
-        padding: 12px 24px;
-        transition: background-color 0.3s ease;
-
     }
 
-    & button:hover {
-        color: #66a8ff8f;
+    & .botaoMenu:hover {
+        color: #0000008f;
     }
 }
 
- /* Container principal */
- .solenergy-container {
+.footer {
+    padding: 1.25rem 1rem;
+    background-color: #66A9FF;
+    justify-items: center;
+}
+
+/*CSS Section Principal */
+.solenergy-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: center; /* Alterado para centralizar verticalmente */
-}
-
-/* Seção da calculadora */
-.calculadora-section {
-    flex: 1;
-    min-width: 300px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Efeito de gradiente solar */
-.calculadora-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(90deg, #fdc830, #f37335);
-}
-
-/* Cabeçalho */
-.calculadora-header h1 {
-    color: #2c3e50;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    font-weight: 800;
-}
-
-/* Texto descritivo */
-.calculadora-descricao {
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    line-height: 1.7;
-}
-
-/* Botões */
-.botoes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.botao-primario {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    min-width: 180px;
-    background: linear-gradient(135deg, #fdc830, #f37335);
-    color: white;
-    box-shadow: 0 4px 15px rgba(243, 115, 53, 0.3);
-    border: none;
-    cursor: pointer;
+
+    /* Alterado para centralizar verticalmente */
+    .calculadora-section {
+        flex: 1;
+        min-width: 300px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        padding: 40px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Efeito de gradiente solar */
+    .calculadora-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, #66A9FF, #378bf8);
+    }
+
+    /* Cabeçalho */
+    .calculadora-header h1 {
+        color: #2c3e50;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    /* Texto descritivo */
+    .calculadora-descricao {
+        color: #555;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        line-height: 1.7;
+    }
+
+    /* Botões */
+    .botoes-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .botao-primario {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        min-width: 180px;
+        background: linear-gradient(135deg, #66A9FF, #378bf8);
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: none;
+        cursor: pointer;
+    }
+
+    .botao-primario:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px #1073f5;
+    }
+
+    img {
+        width: 700px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
 }
 
-.botao-primario:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(243, 115, 53, 0.4);
+section {
+    padding-bottom: 50px;
 }
 
-/* Seção da imagem */
-.imagem-section {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+.section-porque {
+    padding: 1.25rem 1rem;
+    background-color: #8ab7f155;
+    justify-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    .col-sm {
+        width: 400px;
+        justify-items: center;
+        text-align: center;
+
+        h4 {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    }
 }
 
-.imagem-section img {
-    max-width: 100%;
-    height: auto;
+.section-depoimentos {
+    padding: 1.25rem 1rem;
+    background-color: #c0c0c055;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px #4950575e;
+    justify-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    & blockquote {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        font-style: italic;
+
+    }
+
+    & footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+/* Estilos gerais do formulário */
+.demonstracao-form {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    .demonstracao-form h1 {
+        color: #2c3e50;
+        font-size: 26px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Divisor visual */
+    .demonstracao-form hr {
+        border: none;
+        height: 1px;
+        background-color: #e0e0e0;
+        margin: 20px 0;
+    }
+
+    /* Estilos dos campos do formulário */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #495057;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    /* Estilo do botão */
+    button {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.section-form {
+    padding: 40px;
+    background-color: #357bd655;
 }

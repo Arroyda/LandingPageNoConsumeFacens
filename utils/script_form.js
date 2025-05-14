@@ -10,7 +10,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     };
 
     try {
-        const response = await fetch('https://mockapi.io/api/v1/formulario', { // substitua pela URL real
+        const response = await fetch('https://68239e1965ba0580339759a2.mockapi.io/formulario', { // substitua pela URL real
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
